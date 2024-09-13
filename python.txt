@@ -1,3 +1,41 @@
 python
 
 # criar um servidor  com python3: python3 -m http.server 9999
+
+instalar  python e django
+sudo apt update
+sudo apt install python3 python3-pip
+pip3 install virtualenv
+sudo apt install python3-virtualenv
+virtualenv env
+pip install django
+sudo apt install python3-django
+
+
+criando arquivo com informações de requerimentos
+pip freeze > requirement.txt
+
+criando um projeto
+django-admin startproject nome_do_projeto .
+
+
+criando uma aplicação
+django-admin startapp nome_do_projeto .
+
+
+um projeto django, pode ter várias aplicações
+
+executando o servidor django dentro do projeto
+python3 manage.py runserver
+
+cria migrations
+python3 manage.py makemigrations
+
+executa migrates para o banco
+python3 manage.py migrate
+
+cria um super usuário
+python3 manage.py createsuperuser
+
+shell do python
+python3 manage.py shell
