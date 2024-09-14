@@ -39,3 +39,7 @@ python3 manage.py createsuperuser
 
 shell do python
 python3 manage.py shell
+
+carrega todos os arquivos estáticos(css, js, images) para um arquivo chamado: staticfiles,para
+ser executado em produção.
+python3 manage.py collectstatic
